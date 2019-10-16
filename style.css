@@ -1,0 +1,14 @@
+body {
+    background: url("https://media2.giphy.com/media/q5tgkdm7cIeOI/giphy.gif")
+}
+#container {
+    background: lightblue!important
+}
+h1, h3, h4 {
+    text-align: center
+}
+
+.input-field {
+    text-align: center
+}
+

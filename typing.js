@@ -16,21 +16,18 @@ function updateInCorrect () {
 $("#toType").append(letter)
 
 document.onkeyup = function(event){
-    let typed = $("#first_name2").val()
+    let typed = $("#textInput").val()
     console.log(typed)
     if (typed === letter) {
-        console.log("correct")
         correct++;
         updateCorrect();
-        $("#first_name2").val('')
+        $("#textInput").val('')
         letter = letters[Math.floor(Math.random()*letters.length)];
         $("#toType").text(letter)
-        console.log("this is the letter to type 2nd round: " + letter);
     } else {
-        $("#first_name2").val('')
+        $("#textInput").val('')
         inCorrect++
         updateInCorrect();
-        console.log("incorrect")
 
     }
 };
